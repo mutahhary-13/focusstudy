@@ -295,8 +295,9 @@
     const educationalChannels=[
       {name:'Vora Class',id:'UCDG_YP69cl42ly3pPy8-Liw'},
       {name:'ALLEN JEE',id:'UCkUI45drrKTWLxy3q3voJRw'},
-      {name:'Eduniti',id:'UC7px6OmooQLmsJlYACR_n-A'},
-      {name:'Arjuna JEE',id:'UCpyc1eTpM1cA3P0ZWym4clw'},
+      {name:'Eduniti' ,id:'UCssYfh6MJMW1OchiHJpbHjw'},
+      {name:'Arjuna JEE',id:'UCctEsQirgs3hCmq5S7A7ToA'},
+      {name:'Mohit Tyagi',id:'UCpyc1eTpM1cA3P0ZWym4clw'},
       
     ];
     const allLessons=Object.entries(lectures).flatMap(([subject,data])=>data.lessons.map(lesson=>({...lesson,subject,subjectName:data.name}))); let currentUser=null; let savedPlaylists=[]; let savedLectures=[]; let apiKey=''; let checklistDbState=null; const subjectsEl=document.querySelector('#subjects'),libraryEl=document.querySelector('#library'),savedLecturesEl=document.querySelector('#savedLectures'),currentDateEl=document.querySelector('#currentDate'); currentDateEl.textContent=new Intl.DateTimeFormat('en-US',{weekday:'long',month:'long',day:'numeric'}).format(new Date());
