@@ -293,11 +293,16 @@
     ]},chemistry:{name:'Chemistry',icon:'⚗',group:'science',lessons:[{title:'Atomic Structure',video:'ae1qJxylnn4'}]},maths:{name:'Mathematics',icon:'△',group:'maths',lessons:[{title:'Quadratic Equations',video:'siCu5hUK9p4'}]}};
     const checklistData={physics:{name:'Physics',chapters:['Units and Measurements','Kinematics','Laws of Motion','Work, Energy and Power','Rotational Motion','Gravitation','Properties of Solids and Liquids','Thermodynamics','Kinetic Theory of Gases','Oscillations','Waves','Electrostatics','Current Electricity','Magnetic Effects of Current and Magnetism','Electromagnetic Induction and Alternating Currents','Electromagnetic Waves','Optics','Dual Nature of Matter and Radiation','Atoms and Nuclei','Electronic Devices']},chemistry:{name:'Chemistry',chapters:['Some Basic Concepts of Chemistry','Atomic Structure','Chemical Bonding and Molecular Structure','Chemical Thermodynamics','Solutions','Equilibrium','Redox Reactions and Electrochemistry','Chemical Kinetics','Classification of Elements and Periodicity in Properties','p-Block Elements','d- and f-Block Elements','Coordination Compounds','Purification and Characterisation of Organic Compounds','Some Basic Principles of Organic Chemistry','Hydrocarbons','Organic Compounds Containing Halogens','Organic Compounds Containing Oxygen','Organic Compounds Containing Nitrogen','Biomolecules','Principles Related to Practical Chemistry']},maths:{name:'Mathematics',chapters:['Sets, Relations and Functions','Complex Numbers and Quadratic Equations','Matrices and Determinants','Permutations and Combinations','Binomial Theorem','Sequence and Series','Limit, Continuity and Differentiability','Integral Calculus','Differential Equations','Coordinate Geometry','Three Dimensional Geometry','Vector Algebra','Statistics and Probability','Trigonometry','Mathematical Reasoning','Mathematical Induction']}};
     const educationalChannels=[
-      {name:'Vora Class',id:'UCDG_YP69cl42ly3pPy8-Liw'},
+      
       {name:'ALLEN JEE',id:'UCkUI45drrKTWLxy3q3voJRw'},
       {name:'Eduniti' ,id:'UC7px6OmooQLmsJlYACR_n-A'},
-      {name:'Arjuna JEE',id:'UCctEsQirgs3hCmq5S7A7ToA'},
       {name:'Mohit Tyagi',id:'UCpyc1eTpM1cA3P0ZWym4clw'},
+      {name:'Vora Class',id:'UCDG_YP69cl42ly3pPy8-Liw'},
+      {name:'Arjuna JEE',id:'UCctEsQirgs3hCmq5S7A7ToA'},
+      {name:'JEE Wallah',id:'UCVJU_IChPMOe8RWkdVQjtfQ'},
+      {name:'PW Alakh Pandey',id:'UCiGyWN6DEbnj2alu7iapuKQ'},
+      {name:'OC ka master',id:'UC_ltCdLVMRZ7r3IPzF2Toyg'},
+      
       
     ];
     const allLessons=Object.entries(lectures).flatMap(([subject,data])=>data.lessons.map(lesson=>({...lesson,subject,subjectName:data.name}))); let currentUser=null; let savedPlaylists=[]; let savedLectures=[]; let apiKey=''; let checklistDbState=null; const subjectsEl=document.querySelector('#subjects'),libraryEl=document.querySelector('#library'),savedLecturesEl=document.querySelector('#savedLectures'),currentDateEl=document.querySelector('#currentDate'); currentDateEl.textContent=new Intl.DateTimeFormat('en-US',{weekday:'long',month:'long',day:'numeric'}).format(new Date());
